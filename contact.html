@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact me | Corinne Lee</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+  	<nav class="navbar navbar-expand-sm nav-bar-custom fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="justify-content-end collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="about.html">About me</a></li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="projects.html">Projects</a></li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="process.html">Process doc</a></li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="contact.html">Contact me</a></li>
+        </ul>
+      </div>
+    </div>
+	</nav>
+  
+  <div class="container contact-section rounded mb-3">
+    <div class="row justify-content-center">
+       <div class="col-sm-12 col-lg-4 mb-5 me-lg-5">
+          <h1 class="display-5">Let's get in touch!</h1>
+          <p class="mt-4">Thank you for visiting my website! If you want to send me message, please fill out the form or send me an email. You can also check out my Linkedin by clicking the Linkedin icon below. Can't wait to connect with you!</p><br>
+         <div>
+          <a href="https://www.linkedin.com/in/corinne-lee-slew/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="https://www.linkedin.com/in/corinne-lee-slew/"><i class="fa-brands fa-linkedin skill-i-icon"></i></a>
+          <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="corinne.leeslew@mail.utoronto.ca"><i class="fa-solid fa-envelope skill-i-icon"></i></a>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-12 ms-lg-5">
+      <div>
+        <form>
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="name" class="form-control" id="name" placeholder="Enter name" name="pswd">
+          </div>
+
+          <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+
+          <div class="mb-3 mt-3">
+            <label for="comment">Write a message:</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
+          
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary rounded-pill btn-1 p-2 pe-3 ps-3 shadow" data-bs-toggle="modal" data-bs-target="#sendMsgModal" onClick="displayModalMsg()">Send message</button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="sendMsgModal" tabindex="-1" aria-labelledby="sendMsgModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="sendMsgModalLabel">Send message</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalMsg">
+                  <p id="modal-name"></p>
+                  <p id="modal-email"></p>
+                  <p id="modal-comment"></p>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Back to editing</button>
+                  <button class="btn btn-primary btn-1 rounded-pill" onClick="displaySuccessAlert()">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </form>
+      </div>  
+    </div>
+    </div>    
+  </div>
+<!--  test button
+
+<button onClick="displaySuccessAlert()">click</button>-->
+  
+<!-- display alert after clicking submit-->
+  <div class="alert alert-success container" id="msg-received-alert">
+  Message has been sent successfully. I will get back to you soon!
+  </div>
+  <script src="js/custom.js"></script>
+  
+  
+  <script src="https://kit.fontawesome.com/4e36e43021.js" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
+
+<!--modal element showing sucess  when message is sent-->
