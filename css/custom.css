@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*colors
+highlight: 9494ff
+
+linear gradient
+blueberry blue: 4f86f7
+saturated lavender: 8787ff
+linear-gradient(to right, #8490ff 0%, #4f86f7 38%, #8787ff 100%);
+*/
+.mt-6{
+  margin-top: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .mt-6{
+  margin-top: 1.25em;
+}
+}
+
+*{
+	color: #212529;
+	font-family: 'Quicksand', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; 
+	font-weight: 700;
+}
+p{
+  margin-bottom: 0;
+}
+
+mark{
+  background-color: #62bdfc40; 
+}
+/*NAV BAR*/
+.nav-bar-custom{
+	padding: 1.25em 0;
+  background-color: #fff;
+}
+.nav-link-custom:hover{
+  background: -webkit-linear-gradient(#4f86f7, #8787ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media only screen and (min-width: 768px) {
+  .nav-item{
+    padding-left: 1.5em;
+  }
+}
+.active{
+  background: -webkit-linear-gradient(#4f86f7, #8787ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*Main container*/
+.main-container-custom{
+  margin-top: 5em;
+  background-image: url("../img/cover.jpg");
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+/*  align-items: center;*/
+}
+
+#h1-name{
+  font-family: 'Parisienne', cursive, 'Quicksand', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-size: 5.5em;
+  margin: 0;
+}
+
+/*BUTTON  ---------*/
+.btn-1 {
+  background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 38%, #8787ff 100%);
+  border-radius: 20px;
+  border: none;
+}
+.btn-1:hover{
+  text-decoration: underline;
+  background-color: #000 !important; 
+}
+.btn-2:active, .btn-2:hover{
+  background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 38%, #8787ff 100%);
+  border-color: #8787ff;
+}
+/*----------------------*/
+
+.main-container-custom > .container .btn{
+  margin-top: 2em;
+}
+/*SKILLS SECTION*/
+.list-group-item{
+  font-weight: 500;
+}
+
+.card-custom{
+  width: 80%;
+  margin-bottom: 0.75em;
+}
+/*i element size*/
+.fa-code-merge, .fa-laptop-code, .fa-pen-nib{
+  font-size: 2em;
+}
+
+.border-inside-card{
+  border-left: none;
+  border-right: none;
+}
+@media only screen and (min-width: 768px) {
+
+  .border-inside-card{
+  border-left: 0.5px #d7d7d7 solid;
+  border-right: 0.5px #d7d7d7 solid;
+  }
+}
+
+
+/*EDU SECTION*/
+.edu-section{
+	background-image: linear-gradient(to right, #8490ff60 0%, #62bdfc60 38%, #8787ff60 100%);
+  padding: 3em 0;
+}
+.edu-card{
+  padding: 1rem 1.25rem;
+}
+.fa-graduation-cap, .fa-briefcase{
+  font-size: 2.5em;
+}
+/*EXPERIENCE SECTION accordion*/
+
+.accordion-button:not(.collapsed) {
+  background-color: #9494ff;
+}
+.accordion-item{
+  margin-bottom: 0.5em;
+}
+/*download cv button-----------------*/
+.download-cv{
+  margin: 2em 0;
+}
+.download-cv a{
+  text-decoration: none;
+  color: #fff;
+  padding: 1em;
+  
+}
+/*FOOTER*/
+.footer{
+  padding: 3em 0;
+}
+.fa-linkedin{
+  color: #2A6AC2;
+  font-size: 2em;
+  margin-right: 1em;
+}
+.fa-linkedin:hover, .fa-envelope:hover{
+  color: #19509B;
+}
+.fa-envelope{
+  color: #3F8BD9;
+/*  margin: 0;*/
+  font-size: 2em;
+}
+
+/*----------------*****ABOUT ME PAGE********------------------*/
+.fa-location-dot{
+  margin-right: 0.5em;
+}
+.carousel{
+  margin-top: 5em;
+}
+.carousel-height{
+  height: 35vw;
+}
+
+.carousel-caption{
+/*  background-color: #ffffff50;*/
+  position: absolute;
+  bottom: 10%;
+  left: 60%;
+  padding: 1.5em;
+  text-align: left;
+}
+
+.card-about{
+  padding: 2em;
+  background-image: linear-gradient(to right, #8490ff60 0%, #62bdfc60 38%, #8787ff60 100%);
+}
+
+/*---------------------PROJECTS*/
+.highlight-section{
+  background-image: linear-gradient(to right, #8490ff60 0%, #62bdfc60 38%, #8787ff60 100%);
+  padding: 1em 0 2em 0;
+  margin: 1em 0;
+}
+.card-tile{
+  width: 97%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.font-weight-500{
+  font-weight: 500;
+}
+a .card:hover{
+  background-color: #e0e0ff;
+}
+/*hover zoom on image*/
+.hover-zoom{
+  overflow: hidden;
+}
+.hover-zoom img{
+  transition: transform .5s ease;
+}
+.hover-zoom:hover img{
+  transform: scale(1.05);
+}
+
+
+/*CONTACT PAGE Alert*/
+#msg-received-alert{
+  display: none;
+}
+.contact-section{
+  margin-top: 2.5em;
+  background-image: linear-gradient(to right, #8490ff60 0%, #62bdfc60 38%, #8787ff60 100%);
+  padding: 4em;
+}
+@media only screen and (min-width: 768px) {
+  .contact-section{
+  margin-top: 6em;
+  }
+}
+
+
+/*PROCESS PAGE*/
+#color-palette{
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 38%, #8787ff 100%);
+}
+#color-palette-2{
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(to right, #8490ff60 0%, #62bdfc60 38%, #8787ff60 100%);
+}
